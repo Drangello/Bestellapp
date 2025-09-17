@@ -1,12 +1,12 @@
 
-function itemTemplate(burgerData) {
+function itemTemplate(item) {
   return `
-    <div>
-      <h3>${burgerData.name}</h3>
-      <p>${burgerData.description}</p>
-      <span>${(burgerData.price)} €</span>
-    </div>
+    <article class="burger-item">
+      <h3>${item.name}</h3>
+      <p>${item.description}</p>
+      <span>${item.price.toFixed(2).replace('.', ',')} €</span>
+    </article>
   `;
 }
-const host = document.getElementById('menu');
-host.innerHTML = itemTemplate(burgerData);
+
+
