@@ -1,3 +1,8 @@
+
+function init() {
+  renderMenuContener()
+}
+
 function renderMenuContener() {
   const refBurger = document.getElementById('menu');
   refBurger.innerHTML = "";
@@ -9,5 +14,3 @@ function renderMenuContener() {
   refBurger.innerHTML = burgerItem;
 }
 
-// Damit es sofort nach dem Laden angezeigt wird:
-document.addEventListener("DOMContentLoaded", renderMenuContener);
