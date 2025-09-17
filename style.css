@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #4b0082; 
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #e6e6fa; 
+  border-bottom: 2px solid #4b0082;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.menu, .cart {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.menu {
+  border-right: 2px solid #4b0082;
+}
+
+.menu h2, .cart h2 {
+  margin-bottom: 15px;
+}
+
+button {
+  background: #4b0082;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #9370db; 
+}
+
+.cart-footer {
+  margin-top: 20px;
+  border-top: 1px solid #4b0082;
+  padding-top: 10px;
+}
